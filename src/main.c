@@ -6,7 +6,7 @@
 /*   By: aarustam < aarustam@student.42yerevan.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/05 20:19:54 by aarustam          #+#    #+#             */
-/*   Updated: 2024/08/05 22:54:58 by aarustam         ###   ########.fr       */
+/*   Updated: 2024/08/07 13:45:30 by aarustam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ int	main(int ac, char **av)
 {
 	t_fractal	fractal;
 
+	fractal.name = av[1];
 	if (ac == 2 && ft_strncmp(av[1], "mandelbrot", 10) == 0)
 	{
 		fractal_init(&fractal);
